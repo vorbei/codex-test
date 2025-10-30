@@ -1,1 +1,7 @@
+# PDF转DOCX工具依赖
 pdf2docx>=0.5.0
+PyMuPDF>=1.23.0
+python-docx>=0.8.11
+
+# PDF生成（用于测试）
+reportlab>=4.0.0

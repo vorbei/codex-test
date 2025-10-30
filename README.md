@@ -1,13 +1,21 @@
 # codex-test
 
-这个仓库包含一个PDF转DOCX的转换工具。
+这个仓库包含PDF转DOCX的转换工具。
+
+## 工具版本
+
+### pdf_to_docx_v2.py (推荐)
+改进版工具，使用PyMuPDF提取文本，更稳定可靠。
+
+### pdf_to_docx.py
+原始版本，使用pdf2docx库进行转换。
 
 ## 功能特性
 
 - 单个PDF文件转换为DOCX格式
 - 批量转换目录中的所有PDF文件
 - 支持指定页面范围进行转换
-- 保留PDF的格式和布局
+- 提取并保留PDF文本内容
 
 ## 安装依赖
 
@@ -19,7 +27,13 @@ pip install -r requirements.txt
 
 ### 基本用法
 
-转换单个PDF文件：
+转换单个PDF文件（推荐使用v2版本）：
+
+```bash
+python pdf_to_docx_v2.py input.pdf
+```
+
+或使用原始版本：
 
 ```bash
 python pdf_to_docx.py input.pdf

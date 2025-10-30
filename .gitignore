@@ -1,0 +1,24 @@
+# Test files
+*.pdf
+*.docx
+
+# Test directories
+test_pdfs/
+test_output/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
